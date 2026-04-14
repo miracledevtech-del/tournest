@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourNest — Discover Amazing Places</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsiveness.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/linearicons.css">
+</head>
+<body>
+    <section class="quick-actions flex space">
+        <div class="flex gap">
+            <select name="language">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+            </select>
+            <select name="currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="ngn">NGN</option>
+            </select>
+        </div>
+        <div class="flex gap">
+            <a href="tel:+2348132186332">+234 813 218 6332</a>
+            <a href="#">Sign In</a>
+            <a href="#">Register</a>
+        </div>
+    </section>
+
+    <header class="flex a-center">
+        <h2 class="center-text">Tour<span class="color">Nest</span></h2>
+        <nav class="flex" id="nav">
+            <a href="#home" class="active nav-link">Home</a>
+            <a href="#how-it-works" class="nav-link">How it Works</a>
+            <a href="#explore" class="nav-link">Explore</a>
+            <a href="#review" class="nav-link">Reviews</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <section class="hero-section section" id="home">
+        <div class="container">
+            <div class="row flex-d a-center">
+              
+                <h1 class="center-text">Discover the World's Best<br>Places,Restaurants &amp; Hotels</h1>
+                <p class="center-text">Find top-rated destinations, hidden gems, and local favourites — all in one place.</p>
+                <div class="form-container flex a-center">
+                    <div class="single-form-container flex">
+                        <div class="single-form flex">
+                            <p>What?</p>
+                            <input type="text" placeholder="e.g. restaurant, hotel, attraction">
+                            <i class="lnr lnr-list"></i>
+                        </div>
+                        <div class="single-form flex">
+                            <p>Where?</p>
+                            <input type="text" placeholder="e.g. Lagos, London, New York">
+                            <i class="lnr lnr-map-marker"></i>
+                        </div>
+                    </div>
+                    <button class="single-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container flex translate j-center">
+            <div class="box flex-d gap">
+                <i class="fa fa-cutlery fa-2x"></i>
+                <h3>Restaurants</h3>
+                <p>320 Listings</p>
+            </div>
+            <div class="box flex-d gap">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <h3>Destinations</h3>
+                <p>215 Listings</p>
+            </div>
+            <div class="box flex-d gap">
+                <i class="fa fa-medkit fa-2x"></i>
+                <h3>Healthcare</h3>
+                <p>140 Listings</p>
+            </div>
+            <div class="box flex-d gap">
+                <i class="fa fa-bed fa-2x"></i>
+                <h3>Hotels</h3>
+                <p>180 Listings</p>
+            </div>
+            <div class="box flex-d gap">
+                <i class="fa fa-car fa-2x"></i>
+                <h3>Automobile</h3>
+                <p>95 Listings</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+        <div class="container">
+            <div class="section-title center-text">
+                <h3>How It Works</h3>
+                <p>Find and book your next experience in three simple steps</p>
+            </div>
+            <div class="flex j-center wrap">
+                <div class="box-2 center-text">
+                    <div class="icon flex a-center j-center">
+                        <i class="fa fa-search fa-lg"></i>
+                    </div>
+                    <h4>Search a Place</h4>
+                    <p>Type what you are looking for — a restaurant, hotel, or attraction — and choose your location to get instant results.</p>
+                    <a href="#explore" class="rect-link">Start Exploring</a>
+                </div>
+                <div class="box-2 center-text">
+                    <div class="icon flex a-center j-center">
+                        <i class="fa fa-star fa-lg"></i>
+                    </div>
+                    <h4>Read Reviews</h4>
+                    <p>Browse real ratings and reviews from travellers who have been there. Filter by rating, price range, and category.</p>
+                    <a href="#review" class="rect-link">See Reviews</a>
+                </div>
+                <div class="box-2 center-text">
+                    <div class="icon flex a-center j-center">
+                        <i class="fa fa-check fa-lg"></i>
+                    </div>
+                    <h4>Book and Go</h4>
+                    <p>Save your favourites, get directions, and make your booking — all without leaving TourNest.</p>
+                    <a href="#contact" class="rect-link">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-section section" id="explore">
+        <div class="container">
+            <div class="section-title center-text">
+                <h3>Explore</h3>
+                <p>Top-rated places handpicked for travellers like you</p>
+            </div>
+            <div class="col flex wrap j-center">
+
+                <div class="card">
+                    <div class="thumbnail flex">
+                        <img src="./img/e1.jpg" alt="Skyline Rooftop Bar">
+                        <div class="flex space absolute a-center">
+                            <p class="best">Best Rated</p>
+                            <div class="flex ex-actions">
+                                <i class="fa fa-arrows-alt"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Skyline Rooftop Bar</h3>
+                        <div class="flex ex-decript a-center">
+                            <div class="flex rate a-center">
+                                <p class="rating">4.9</p>
+                                <p>38 ratings</p>
+                            </div>
+                            <p>From <span class="color">$15 - $80</span></p>
+                            <p>Bar &amp; Lounge</p>
+                        </div>
+                        <p class="txt">Panoramic city views, craft cocktails, and a vibrant atmosphere that draws locals and visitors alike every evening.</p>
+                        <hr>
+                        <p class="color">Open Now &middot; Closes 2am</p>
+                        <div class="flex gap diss">
+                            <i class="lnr lnr-map-marker"></i>
+                            <i class="lnr lnr-upload"></i>
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="thumbnail flex">
+                        <img src="./img/e2.jpg" alt="The Garden Bistro">
+                        <div class="flex space absolute a-center">
+                            <p class="best">Popular</p>
+                            <div class="flex ex-actions">
+                                <i class="fa fa-arrows-alt"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>The Garden Bistro</h3>
+                        <div class="flex ex-decript a-center">
+                            <div class="flex rate a-center">
+                                <p class="rating">4.7</p>
+                                <p>52 ratings</p>
+                            </div>
+                            <p>From <span class="color">$10 - $55</span></p>
+                            <p>Restaurant</p>
+                        </div>
+                        <p class="txt">Farm-to-table dining in a lush outdoor setting. Seasonal menus, fresh local produce, and a relaxed atmosphere for families and couples.</p>
+                        <hr>
+                        <p style="color:green;">Open Now &middot; Closes 10pm</p>
+                        <div class="flex gap diss">
+                            <i class="lnr lnr-map-marker"></i>
+                            <i class="lnr lnr-upload"></i>
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="thumbnail flex">
+                        <img src="./img/e3.jpg" alt="Harbour View Hotel">
+                        <div class="flex space absolute a-center">
+                            <p class="best">Top Pick</p>
+                            <div class="flex ex-actions">
+                                <i class="fa fa-arrows-alt"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Harbour View Hotel</h3>
+                        <div class="flex ex-decript a-center">
+                            <div class="flex rate a-center">
+                                <p class="rating">4.8</p>
+                                <p>91 ratings</p>
+                            </div>
+                            <p>From <span class="color">$120 - $350</span></p>
+                            <p>Hotel</p>
+                        </div>
+                        <p class="txt">Waterfront luxury with stunning harbour views, an infinity pool, and a dedicated concierge team. A standout choice for premium stays.</p>
+                        <hr>
+                        <p style="color:green;">Available &middot; Check-in anytime</p>
+                        <div class="flex gap diss">
+                            <i class="lnr lnr-map-marker"></i>
+                            <i class="lnr lnr-upload"></i>
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="thumbnail flex">
+                        <img src="./img/e4.jpg" alt="Spice Route Kitchen">
+                        <div class="flex space absolute a-center">
+                            <p class="best">Must Try</p>
+                            <div class="flex ex-actions">
+                                <i class="fa fa-arrows-alt"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Spice Route Kitchen</h3>
+                        <div class="flex ex-decript a-center">
+                            <div class="flex rate a-center">
+                                <p class="rating">4.6</p>
+                                <p>44 ratings</p>
+                            </div>
+                            <p>From <span class="color">$8 - $40</span></p>
+                            <p>Restaurant</p>
+                        </div>
+                        <p class="txt">Authentic South Asian flavours — bold spices, slow-cooked curries, and freshly baked bread in a warm and welcoming setting.</p>
+                        <hr>
+                        <p class="color">Closed &middot; Opens 11am tomorrow</p>
+                        <div class="flex gap diss">
+                            <i class="lnr lnr-map-marker"></i>
+                            <i class="lnr lnr-upload"></i>
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="thumbnail flex">
+                        <img src="./img/e5.jpg" alt="Sunset Wellness Spa">
+                        <div class="flex space absolute a-center">
+                            <p class="best">Trending</p>
+                            <div class="flex ex-actions">
+                                <i class="fa fa-arrows-alt"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Sunset Wellness Spa</h3>
+                        <div class="flex ex-decript a-center">
+                            <div class="flex rate a-center">
+                                <p class="rating">4.9</p>
+                                <p>67 ratings</p>
+                            </div>
+                            <p>From <span class="color">$50 - $200</span></p>
+                            <p>Spa &amp; Wellness</p>
+                        </div>
+                        <p class="txt">A full wellness retreat offering massages, facials, and hydrotherapy. The perfect escape from a packed travel itinerary.</p>
+                        <hr>
+                        <p style="color:green;">Open Now &middot; Closes 8pm</p>
+                        <div class="flex gap diss">
+                            <i class="lnr lnr-map-marker"></i>
+                            <i class="lnr lnr-upload"></i>
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="thumbnail flex">
+                        <img src="./img/e6.jpg" alt="Old Town Walking Tour">
+                        <div class="flex space absolute a-center">
+                            <p class="best">Hidden Gem</p>
+                            <div class="flex ex-actions">
+                                <i class="fa fa-arrows-alt"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Old Town Walking Tour</h3>
+                        <div class="flex ex-decript a-center">
+                            <div class="flex rate a-center">
+                                <p class="rating">5.0</p>
+                                <p>29 ratings</p>
+                            </div>
+                            <p>From <span class="color">$12 - $25</span></p>
+                            <p>Experience</p>
+                        </div>
+                        <p class="txt">A guided walk through centuries of history — cobblestone streets, colonial architecture, and stories that bring the city's past to life.</p>
+                        <hr>
+                        <p style="color:green;">Available Daily &middot; 9am &amp; 3pm</p>
+                        <div class="flex gap diss">
+                            <i class="lnr lnr-map-marker"></i>
+                            <i class="lnr lnr-upload"></i>
+                            <i class="lnr lnr-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="client-section section" id="review">
+        <div class="container">
+            <div class="section-title center-text">
+                <h3>What Travellers Say</h3>
+                <p>Real reviews from people who used TourNest to plan their trips</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-slider flex">
+                    <div class="pad">
+                        <div class="testimonial flex-d a-center gap">
+                            <div class="img-box flex"><img src="./img/c2.png" alt="Amara O."></div>
+                            <h5>Amara O. &mdash; Lagos</h5>
+                            <p>TourNest made planning my Abuja trip so much easier. I found restaurants, a hotel, and a guided tour all in one place. The reviews were accurate and the booking process was seamless. Will definitely use again.</p>
+                        </div>
+                    </div>
+                    <div class="pad">
+                        <div class="testimonial flex-d a-center gap">
+                            <div class="img-box flex"><img src="./img/c1.png" alt="James R."></div>
+                            <h5>James R. &mdash; London</h5>
+                            <p>I used TourNest to explore Lagos as a first-time visitor. The listings were detailed, the ratings were honest, and I discovered spots I would never have found on my own. Excellent for international travellers.</p>
+                        </div>
+                    </div>
+                    <div class="pad">
+                        <div class="testimonial flex-d a-center gap">
+                            <div class="img-box flex"><img src="./img/c3.png" alt="Fatima K."></div>
+                            <h5>Fatima K. &mdash; Kano</h5>
+                            <p>The search filters are really useful. I could narrow down by budget and distance and found a great family resort for our holiday. My kids loved it. TourNest is now our go-to travel planning tool.</p>
+                        </div>
+                    </div>
+                    <div class="pad">
+                        <div class="testimonial flex-d a-center gap">
+                            <div class="img-box flex"><img src="./img/c4.png" alt="David E."></div>
+                            <h5>David E. &mdash; Port Harcourt</h5>
+                            <p>As a frequent business traveller I need reliable hotel recommendations fast. TourNest delivers every time — accurate info, real photos, no fake listings. Saved me from two bad bookings this year alone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="flex dot-container j-center">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter">
+        <div class="container flex a-center j-center wrap count">
+            <div class="center-text"><h2>90k+</h2><p>Active Listings</p></div>
+            <div class="center-text"><h2>40+</h2><p>Categories</p></div>
+            <div class="center-text"><h2>65k+</h2><p>Monthly Visitors</p></div>
+            <div class="center-text"><h2>50k+</h2><p>Happy Travellers</p></div>
+        </div>
+    </section>
+
+    <section class="blog-section section" id="blog">
+        <div class="container">
+            <div class="section-title center-text">
+                <h3>Travel Tips &amp; Articles</h3>
+                <p>Guides, tips, and stories to help you travel smarter</p>
+            </div>
+            <div class="col flex wrap j-center">
+                <div class="card">
+                    <div class="thumbnail flex"><img src="./img/b1.jpg" alt="Find hidden gems"></div>
+                    <div class="news">
+                        <a href="#" class="title">5 Ways to Find Hidden Gems in Any City</a>
+                        <div class="flex">
+                            <p class="posted">By <a href="#" class="black">TourNest Team</a></p>
+                            <p>Jan 2025</p>
+                        </div>
+                        <p>Most tourists stick to the top 10 lists. We show you how to dig deeper using local reviews, neighbourhood filters, and timing to find spots that are not overrun with crowds.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail flex"><img src="./img/b2.jpg" alt="Budget travel"></div>
+                    <div class="news">
+                        <a href="#" class="title">How to Travel Well on a Tight Budget</a>
+                        <div class="flex">
+                            <p class="posted">By <a href="#" class="black">TourNest Team</a></p>
+                            <p>Feb 2025</p>
+                        </div>
+                        <p>Great travel does not have to cost a fortune. From filtering by price range to booking off-peak, here are practical strategies to stretch your budget without sacrificing experience.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail flex"><img src="./img/b3.jpg" alt="List your business"></div>
+                    <div class="news">
+                        <a href="#contact" class="title">Why Every Business Should Be on TourNest</a>
+                        <div class="flex">
+                            <p class="posted">By <a href="#" class="black">TourNest Team</a></p>
+                            <p>Mar 2025</p>
+                        </div>
+                        <p>Thousands of travellers search TourNest daily. If your restaurant, hotel, or attraction is not listed, you are invisible to them. Here is how to get set up in under 10 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <div class="section-title center-text">
+                <h3>List Your Business With Us</h3>
+                <p>TourNest connects thousands of travellers with local businesses every day. Get your listing in front of the right audience — for free.</p>
+            </div>
+            <div class="newsletter flex a-center j-center">
+                <form action="#" class="flex j-center">
+                    <input type="email" placeholder="Enter your business email">
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="flex space">
+            <h2>Tour<span class="color">Nest</span></h2>
+            <div class="gap links flex">
+                <a href="#home">Home</a>
+                <a href="#explore">Explore</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <hr>
+        <footer class="flex wrap space">
+            <div class="copyright">
+                &copy; 2026 TourNest. Designed &amp; Developed by <a href="#">MiracleDev </a>
+            </div>
+            <div class="footer-social flex gap a-center">
+                <a href="tel:+2348132186332"><i class="fa fa-phone"></i> +234 813 218 6332</a>
+                <a href="#" class="social" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>

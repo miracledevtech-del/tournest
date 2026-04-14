@@ -1,0 +1,129 @@
+@media screen and (max-width: 992px) {
+    .single-form input { width: 150px; }
+    .card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        top: 72px;
+        max-height: 0;
+        background-color: white;
+        overflow: hidden;
+        transition: .4s ease;
+        border-bottom: 1px solid var(--border);
+        gap: 0;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 14px 20px;
+        border-radius: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    nav a::after { left: 20px; }
+
+    nav.showed {
+        max-height: 500px;
+        box-shadow: 0 8px 24px rgba(15,31,24,0.12);
+    }
+
+    .hamburger { display: block; }
+
+    header { justify-content: center; padding: 0 20px; }
+
+    .hero-section { min-height: 100vh; }
+    .hero-section h1 { font-size: 2rem; }
+
+    .form-container { flex-direction: column; gap: 12px; margin-top: 36px; }
+
+    .single-form-container {
+        border-radius: 6px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .single-form {
+        min-width: 100%;
+        padding: 14px 20px;
+        height: 58px;
+        border-right: none;
+        border-bottom: 1px solid var(--stone);
+    }
+
+    .single-form:last-child { border-bottom: none; }
+
+    .single-form input { width: 100%; }
+
+    .single-button {
+        border-radius: 6px;
+        width: 100%;
+        max-width: 420px;
+        height: 52px;
+    }
+
+    .translate {
+        transform: none;
+        padding: 24px 0;
+    }
+
+    .box {
+        min-width: calc(50% - 12px);
+        flex: 1;
+    }
+
+    .count { flex-direction: column; gap: 32px; }
+
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .testimonial-container { width: 100%; }
+    .testimonial { padding: 32px 24px; }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    form input {
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+    }
+
+    form button {
+        border-radius: 0 0 6px 6px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer { padding: 40px 20px 0; }
+
+    .footer > .flex {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .links { flex-wrap: wrap; gap: 12px !important; }
+
+    footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 24px 20px;
+    }
+
+    .quick-actions { padding: 10px 20px; }
+
+    .section { padding: 72px 0; }
+}
